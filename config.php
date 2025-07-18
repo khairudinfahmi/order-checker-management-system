@@ -12,10 +12,10 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Database Connection
-$host = 'sql103.byethost22.com';
-$dbname = 'b22_37265128_democheckerwaorder';
-$username = 'b22_37265128';
-$password = 'YnScc89#';
+$host = 'localhost';
+$dbname = 'democheckerwaorder';
+$username = 'root';
+$password = '';
 
 try {
     $conn = new mysqli($host, $username, $password, $dbname);
@@ -28,10 +28,10 @@ try {
 }
 
 // Koneksi ke database invoice
-$invoice_db_host = 'sql103.byethost22.com';
-$invoice_db_name = 'b22_37265128_demoinvoicegenerator';
-$invoice_db_user = 'b22_37265128';
-$invoice_db_pass = 'YnScc89#';
+$invoice_db_host = 'localhost';
+$invoice_db_name = 'demoinvoicegenerator';
+$invoice_db_user = 'root';
+$invoice_db_pass = '';
 
 try {
     $invoice_conn = new mysqli($invoice_db_host, $invoice_db_user, $invoice_db_pass, $invoice_db_name);
